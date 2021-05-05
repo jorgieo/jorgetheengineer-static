@@ -1,0 +1,26 @@
+root {
+    background-color: #fefefe;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner {
+    background-color: blueviolet;
+    min-width: 100vw;
+    min-height: 10vh;
+}
+
+.main-content {
+    background-color: #aaa;
+    min-width: 100vw;
+    min-height: 50vh;
+}
+
+.footer {
+    background-color: black;
+    min-width: 100vw;
+    min-height: 50vh;
+}
