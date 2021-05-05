@@ -1,5 +1,13 @@
 root {
-    background-color: #fefefe;
+    --white-dimmed: #fefefe;
+    --black-raisin: #252627;
+    --red-firebrick: #bb0a21;
+    --yellow-crayola: #f4d35e;
+    --purple-dark: #36213e;
+}
+
+body {
+    background-color: var(--white-dimmed);
 }
 
 .container {
