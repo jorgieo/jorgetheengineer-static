@@ -1,13 +1,15 @@
-root {
+:root {
     --white-dimmed: #fefefe;
     --black-raisin: #252627;
     --red-firebrick: #bb0a21;
     --yellow-crayola: #f4d35e;
     --purple-dark: #36213e;
-}
 
-body {
-    background-color: var(--white-dimmed);
+    --font-lexend: 'Lexend Mega', sans-serif;
+    --font-monserrat: 'Montserrat', sans-serif;
+
+    /* Base Font */
+    font-family: var(--font-monserrat);
 }
 
 .container {
@@ -16,19 +18,29 @@ body {
 }
 
 .banner {
-    background-color: blueviolet;
-    min-width: 100vw;
+    background-color: var(--yellow-crayola);
+    min-width: 100%;
     min-height: 10vh;
 }
 
+.banner>h1 {
+    padding-left: 2rem;
+}
+
 .main-content {
-    background-color: #aaa;
-    min-width: 100vw;
+    background-color: var(--red-firebrick);
+    min-width: 100%;
     min-height: 50vh;
 }
 
+.section {
+    background-color: var(--white-dimmed);
+    min-height: 50vh;
+    margin: 2rem 0 2rem 0;
+}
+
 .footer {
-    background-color: black;
-    min-width: 100vw;
+    background-color: var(--black-raisin);
+    min-width: 100%;
     min-height: 50vh;
 }
