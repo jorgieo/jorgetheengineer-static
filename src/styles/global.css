@@ -45,9 +45,13 @@
     background-color: var(--white-dimmed);
 
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
+    align-items: center;
 
     padding: 2rem;
+
+    min-height: 100vh;
 }
 
 .card {
@@ -56,8 +60,15 @@
     padding: 2rem;
     margin: 2rem;
 
+    max-width: 200px;
+
     border-top: 3px solid var(--red-firebrick);
     border-left: 3px solid var(--red-firebrick);
+}
+
+.card-header {
+    background-color: var(--yellow-crayola);
+    height: 10%;
 }
 
 .footer {
@@ -72,4 +83,18 @@
 .logo {
     border-radius: 50%;
     width: 10%;
+}
+
+@media screen and (max-width: 768px) {
+    .section {
+        flex-flow: column;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    .logo {
+        width: 50%;
+    }
 }
