@@ -20,25 +20,29 @@
 }
 
 .banner {
+    display: flex;
+
     background-color: var(--yellow-crayola);
     min-width: 100%;
     min-height: 10vh;
+
+    border-bottom: 3px solid var(--red-firebrick);
 }
 
 .banner>h1 {
     padding-left: 2rem;
 }
 
-.main-content {
-    background-color: var(--red-firebrick);
-    min-width: 100%;
-    min-height: 50vh;
+#spin-logo {
+    width: 5rem;
 }
+
+/* .main-content {
+
+} */
 
 .section {
     background-color: var(--white-dimmed);
-    min-height: 50vh;
-    margin: 2rem 0 2rem 0;
 
     display: flex;
     justify-content: center;
@@ -47,7 +51,13 @@
 }
 
 .card {
-    box-shadow: 0px 18px 14px -4px #bbb ;
+    box-shadow: 9px 9px 14px -4px #bbb ;
+
+    padding: 2rem;
+    margin: 2rem;
+
+    border-top: 3px solid var(--red-firebrick);
+    border-left: 3px solid var(--red-firebrick);
 }
 
 .footer {
@@ -61,8 +71,5 @@
 
 .logo {
     border-radius: 50%;
-    
-    box-shadow: 8px 8px 6px #000 inset;
-    box-shadow: 4px 4px 8px #eee inset;
     width: 10%;
 }
