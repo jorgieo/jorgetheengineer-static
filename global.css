@@ -93,7 +93,7 @@
 }
 
 #photo-banner {
-    background-image: url('/src/images/pexels-pixabay-158826.jpg');
+    background-image: url('pexels-pixabay-158826.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
