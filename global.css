@@ -113,10 +113,12 @@
 
 #photo-banner-text>#photo-banner-title {
     font-size: 5rem;
+    text-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.8);
 }
 
 #photo-banner-text>#photo-banner-subtitle {
     opacity: 0.8;
+    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.8);
 }
 
 @media screen and (max-width: 768px) {
