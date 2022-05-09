@@ -1,4 +1,5 @@
 # jorgetheengineer-static
+Static website hosting using AWS S3.
 
 ## Hosting:
 S3
