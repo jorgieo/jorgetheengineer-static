@@ -132,7 +132,40 @@ section {
     height: 10%;
 }
 
+section.no-parallax.portfolio {
+    justify-content: space-around;
+    background-color: #9ad2cb;
+}
 
+section.portfolio .project-image {
+    text-align: center;
+}
+
+section.portfolio .project-image img {
+    width: 50%;
+    transition: transform 150ms ease-in;
+}
+
+section.portfolio .project-image img:hover {
+    transform: scale(1.1);
+}
+
+body > main > section.no-parallax.portfolio > div.project-description {
+    max-width: 40%;
+}
+
+body > main > section.no-parallax.portfolio > div.project-description > div > h1 {
+    font-family: Pacifico;
+    font-weight: 400;
+    font-size: 5rem;
+    color: #de6b48;
+    text-shadow: var(--black-raisin) 2px 2px 4px;
+}
+
+body > main > section.no-parallax.portfolio > div.project-description > p{
+    font-size: 2rem;
+    color: var(--black-raisin);
+}
 
 .logo {
     width: 5rem;
