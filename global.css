@@ -3,7 +3,7 @@
 }
 
 :root {
-    --white-dimmed: #fefefe;
+    --white-dimmed: #ededed;
     --black-raisin: #252627;
     --yellow-crayola: #f4d35e;
     --cadet-blue: #39A2AE;
@@ -40,13 +40,13 @@ header {
     min-width: 100vw;
     min-height: 10vh;
 
-    border-bottom: 3px solid var(--yellow-crayola);
+    /* border-bottom: 3px solid var(--yellow-crayola); */
 
     border-radius: 0 0 20px 20px;
 }
 
-.sticky {
-	position: -webkit-sticky;
+.heading {
+    position: -webkit-sticky;
 	position: sticky;
 	top: 0;
     z-index: 999;
@@ -57,6 +57,8 @@ header > h1 {
     padding-left: 2rem;
 }
 
+/* Sections */
+
 section {
     transform-style: preserve-3d;
     position: relative;
@@ -65,6 +67,7 @@ section {
     align-items: center;
     justify-content: center;
     color: white;
+    box-shadow: 0px 3px 5px rgba(50, 50, 50, 0.5);
   }
 
   section.parallax {
@@ -75,10 +78,6 @@ section {
   section.parallax > h1 {
       font-size: 3rem;
       text-align: center;
-  }
-
-  section.parallax > h3 {
-      color: rgba(200, 200, 200, 0.5);
   }
 
 .parallax::after {
@@ -95,10 +94,12 @@ section {
 
 .bg::after {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('/pexels-photo-2330137.webp');
+    url('/assets/images/pexels-photo-2330137.webp');
     background-size: cover;
     filter: blur(3px);
 }
+
+/* Cards */
 
 .no-parallax.card-container {
     background-color: var(--white-dimmed);
@@ -132,9 +133,25 @@ section {
     height: 10%;
 }
 
+/* Portfolio */
+
+.portfolio-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cadet-blue);
+    margin: 0 auto;
+    padding: 3em 0;
+    height: 10vh;
+}
+
+.portfolio-heading > h1 {
+    color: var(--white-dimmed);
+    font-size: 4em;
+}
+
 section.no-parallax.portfolio {
     justify-content: space-around;
-    background-color: #9ad2cb;
 }
 
 section.portfolio .project-image {
@@ -142,7 +159,7 @@ section.portfolio .project-image {
 }
 
 section.portfolio .project-image img {
-    width: 50%;
+    width: 80%;
     transition: transform 150ms ease-in;
 }
 
@@ -154,7 +171,18 @@ body > main > section.no-parallax.portfolio > div.project-description {
     max-width: 40%;
 }
 
-body > main > section.no-parallax.portfolio > div.project-description > div > h1 {
+section.no-parallax.portfolio > div.project-description > p{
+    font-size: 2rem;
+    color: var(--black-raisin);
+}
+
+/* Portfolio | Project Eventually */
+
+section.no-parallax.portfolio.project-eventually {
+    background-color: #9ad2cb;
+}
+
+section.no-parallax.portfolio.project-eventually > div.project-description  > div > h1 {
     font-family: Pacifico;
     font-weight: 400;
     font-size: 5rem;
@@ -162,10 +190,26 @@ body > main > section.no-parallax.portfolio > div.project-description > div > h1
     text-shadow: var(--black-raisin) 2px 2px 4px;
 }
 
-body > main > section.no-parallax.portfolio > div.project-description > p{
-    font-size: 2rem;
-    color: var(--black-raisin);
+/* Portfolio | Project Spotlight */
+
+section.no-parallax.portfolio.project-spotlight {
+    flex-direction: row-reverse;
+    background-color: var(--white-dimmed);
 }
+
+section.no-parallax.portfolio.project-spotlight > div.project-description  > div > h1 {
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 5rem;
+    color: #e5af04;
+    /* text-shadow: var(--black-raisin) 2px 2px 4px; */
+}
+
+body > main > section.no-parallax.portfolio.project-spotlight > div.project-description {
+    padding-left: 5em;
+}
+
+/* Logos */
 
 .logo {
     width: 5rem;
@@ -181,6 +225,8 @@ body > main > section.no-parallax.portfolio > div.project-description > p{
     width: 30%;
 }
 
+/* Footer */
+
 footer {
     background-color: var(--ming);
     height: 10vh;
@@ -189,6 +235,8 @@ footer {
     align-items: center;
     color: var(--white-dimmed);
 }
+
+/* Media Queries */
 
 @media screen and (max-width: 768px) {
 
