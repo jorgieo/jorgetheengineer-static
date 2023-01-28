@@ -129,7 +129,7 @@ section {
 } */
 
 .card-header {
-    background-color: var(--yellow-crayola);
+    background-color: var(--cadet-blue);
     height: 10%;
 }
 
@@ -174,6 +174,7 @@ body > main > section.no-parallax.portfolio > div.project-description {
 section.no-parallax.portfolio > div.project-description > p{
     font-size: 2rem;
     color: var(--black-raisin);
+    padding: 5%;
 }
 
 /* Portfolio | Project Eventually */
@@ -249,7 +250,66 @@ footer {
     .no-parallax.card-container {
         height: fit-content;
     }
-    
+
+    section.no-parallax.portfolio {
+        display: flex;
+        flex-direction: column;
+        max-height: fit-content;
+    }
+
+    section.no-parallax.portfolio * {
+        width: 100vw;
+    }
+
+    section.no-parallax.portfolio>div.project-image {
+        width: 40%;
+        margin: 0 auto;
+        padding: 2%;
+    }
+
+    body > main > section.no-parallax.portfolio > div.project-description {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    body > main > section.no-parallax.portfolio > div.project-description p{
+        font-size: 1.5rem;
+    }
+
+    body > main > section.no-parallax.portfolio.project-eventually {    
+        padding-top: 5vh;
+    }
+
+    body > main > section.no-parallax.portfolio.project-eventually > div.project-description {
+        padding: 1em;
+    }
+
+    section.no-parallax.portfolio.project-eventually > div.project-description > p {
+        margin-bottom: 0;
+        margin-top: 0;
+        padding: 5%;
+        padding-left: 0;
+    }
+
+    section.no-parallax.portfolio > div.project-description > .project-title h1 {
+        margin: 0 auto;
+    }
+
+    body > main > section.no-parallax.portfolio.project-spotlight > div.project-description {
+        padding: 1em;
+        /* height: 100vh; */
+    }
+
+    body > main > section.no-parallax.portfolio.project-spotlight > div.project-image {
+        width: 70%;
+    }
+
+    section.no-parallax.portfolio.project-spotlight {
+        flex-direction: column;
+    }
+
     footer {
         height: fit-content;
     }
